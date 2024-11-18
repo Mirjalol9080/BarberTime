@@ -244,7 +244,6 @@ input {
     /* BANNER - END */
 }
 
-
 @media screen and (max-width: 975px) {
 
     /* HEADER - SATRT */
@@ -364,7 +363,7 @@ input {
         align-items: start;
         flex-direction: column;
         gap: 20px;
-        padding: 20px 50px;
+        padding: 20px 30px;
     }
 
     /* BANNER - END */
