@@ -379,6 +379,16 @@ input {
     }
 }
 
+@media screen and (max-width: 625px) {
+    .banner-title{
+        font-size: 20px;
+    }
+
+    .container{
+        padding: 0 10px;
+    }
+}
+
 
 
 
