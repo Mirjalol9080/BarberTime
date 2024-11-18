@@ -170,6 +170,26 @@ input {
     font-size: 17px;
     color: var(--blask-color);
     flex-shrink: 0;
+    position: relative;
+}
+
+.header-link:hover{
+    color: var(--gray-50);
+}
+
+.header-link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--blask-color);
+    transition: width 0.4s ease; /* Smooth animation */
+}
+
+.header-link:hover::before {
+    width: 100%; /* Expands the line on hover */
 }
 
 .header-buttons {
@@ -347,6 +367,7 @@ input {
     padding: 20px 0;
 }
 
+
 /* EXPLANTION - END */
 
 
@@ -357,7 +378,7 @@ input {
 
 
 @media screen and (max-width: 1400px){
-    .item-main{
+    .explanation-row{
         overflow-x: scroll;
     }
 }
