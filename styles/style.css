@@ -104,6 +104,14 @@ input {
     margin-bottom: 30px;
 }
 
+.item-card__title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000;
+}
+
 .item-card__subtitle {
     font-family: var(--font-family);
     font-weight: 400;
@@ -307,14 +315,6 @@ input {
     padding: 40px 0;
 }
 
-.recommend-card__title {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 110%;
-    color: #000;
-}
-
 .star-title {
     font-family: var(--font-family);
     font-weight: 600;
@@ -333,9 +333,13 @@ input {
 
 /* RECOMMEND - END */
 
+/* NEW TOWAR - START */
+
 .new-towar {
     padding: 20px 0;
 }
+
+/* NEW TOWAR - END */
 
 
 
