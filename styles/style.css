@@ -380,6 +380,11 @@ input {
 }
 
 @media screen and (max-width: 625px) {
+
+    .banner{
+        padding-top: 20px;
+    }
+
     .banner-title{
         font-size: 20px;
     }
