@@ -142,8 +142,8 @@ input {
 /* BANNER - START */
 
 .banner {
-    height: 400px;
-    padding-top: 80px;
+    height: 500px;
+    padding-top: 70px;
 }
 
 .banner-row {
@@ -370,8 +370,6 @@ input {
 
     /* BANNER - END */
 }
-
-
 
 @media screen and (max-width: 625px) {
     .banner-title{
