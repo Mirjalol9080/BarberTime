@@ -62,6 +62,9 @@ input {
     display: flex;
     align-items: center;
     column-gap: 20px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 10px;
 }
 
 .item-row {
@@ -74,11 +77,13 @@ input {
 .item-card {
     border: 1px solid var(--gray-850);
     border-radius: 18px;
-    width: 325px;
-    height: 318px;
+    width: 330px;
+    height: auto;
     background-color: var(--white-color);
     cursor: pointer;
     transition: all 0.2s ease-in;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .item-card:hover {
