@@ -554,6 +554,15 @@ input {
     }
 }
 
+@media screen and (max-width: 465px){
+    /* BANNER - START */
+
+    .banner-title{
+        font-size: 24px;
+    }
+
+    /* BANNER - END */
+}
 
 
 
