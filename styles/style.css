@@ -163,28 +163,14 @@ input {
     /* Gorizontal markazlash */
 }
 
-/* Matn uchun */
-.asad-scc {
-    display: inline-block;
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-    animation: move-left 10s linear infinite;
-    /* Harakat animatsiyasi */
-}
-
-
-/* Animatsiya */
-@keyframes move-left {
-    0% {
-        transform: translateX(100%);
-        /* Matn o‘ng tomondan boshlanadi */
-    }
-
-    100% {
-        transform: translateX(-100%);
-        /* Matn chap tomonga chiqib ketadi */
-    }
+.marque {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    word-spacing: 5px;
+    letter-spacing: 0.05em;
+    color: var(--blask-color);
 }
 
 .header {
