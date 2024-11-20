@@ -142,8 +142,7 @@ input {
 /* HEADER - START */
 
 .marquer-asad {
-    position: absolute;
-    width: 100vw;
+    width: 100%;
     /* Ekran kengligi bo'yicha to'liq */
     overflow: hidden;
     /* Tashqariga chiqib ketgan matnni yashirish */
@@ -153,7 +152,7 @@ input {
     /* Dekorativ effekt */
     background-color: #f4f4f4;
     /* Fon rangi */
-    padding: 10px 0;
+    padding: 6px 0;
     /* Ichki bo‘shliq */
     display: flex;
     align-items: center;
@@ -165,7 +164,7 @@ input {
 .marque {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 120%;
     word-spacing: 5px;
     letter-spacing: 0.05em;
