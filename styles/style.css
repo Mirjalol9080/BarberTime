@@ -26,6 +26,7 @@ body .wraaper {
     --white-color: #fff;
     --gray-900: #d9d9d9;
     --gray-850: #bbb;
+    --gray-1000: #dfa347; 
 }
 
 a {
@@ -404,10 +405,67 @@ input {
     padding: 20px 0;
 }
 
-
 /* EXPLANTION - END */
 
+/* STYLE - START */
 
+.style {
+    padding: 40px 0;
+}
+
+.style-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.style-contend{
+    margin-top: 35px;
+    position: relative;
+}
+
+.style-title {
+    max-width: 400px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.style-subtitle {
+    max-width: 270px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #757575;
+    margin-bottom: 25px;
+}
+
+.style-submit__btn {
+    border-radius: 26px;
+    padding: 15px 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--gray-1000);
+    position: absolute;
+    bottom: 10em;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.style-submit__btn:hover{
+    background-color: transparent;
+    border-color: var(--gray-1000);
+    color: var(--gray-50);
+}
+
+/* STYLE - END */
 
 
 
@@ -517,6 +575,10 @@ input {
 
     /* BANNER - START */
 
+    .banner {
+        padding-top: 20px;
+    }
+
     .banner-search__btn {
         padding: 7px 12px;
         font-size: 16px;
@@ -589,8 +651,16 @@ input {
 @media screen and (max-width: 465px) {
     /* BANNER - START */
 
+    .banner {
+        padding-top: 0px;
+    }
+
     .banner-title {
         font-size: 24px;
+    }
+
+    .banner-row {
+        row-gap: 0;
     }
 
     /* BANNER - END */
