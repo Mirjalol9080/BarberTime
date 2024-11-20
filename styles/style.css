@@ -52,6 +52,7 @@ input {
 }
 
 .wraaper {
+    position: relative;
     font-size: 16px;
     font-weight: normal;
     font-weight: 400;
@@ -90,7 +91,7 @@ input {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-.item-card__img img{
+.item-card__img img {
     width: 100%;
     height: 100%;
 }
@@ -109,7 +110,7 @@ input {
     margin-bottom: 30px;
 }
 
-.item-card__title{
+.item-card__title {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 20px;
@@ -140,6 +141,51 @@ input {
 }
 
 /* HEADER - START */
+
+.marquer-asad {
+    position: absolute;
+    width: 100vw;
+    /* Ekran kengligi bo'yicha to'liq */
+    overflow: hidden;
+    /* Tashqariga chiqib ketgan matnni yashirish */
+    white-space: nowrap;
+    /* Matnni bir qator qilib ko‘rsatish */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Dekorativ effekt */
+    background-color: #f4f4f4;
+    /* Fon rangi */
+    padding: 10px 0;
+    /* Ichki bo‘shliq */
+    display: flex;
+    align-items: center;
+    /* Vertikal markazlash */
+    justify-content: center;
+    /* Gorizontal markazlash */
+}
+
+/* Matn uchun */
+.asad-scc {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    animation: move-left 10s linear infinite;
+    /* Harakat animatsiyasi */
+}
+
+
+/* Animatsiya */
+@keyframes move-left {
+    0% {
+        transform: translateX(100%);
+        /* Matn o‘ng tomondan boshlanadi */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Matn chap tomonga chiqib ketadi */
+    }
+}
 
 .header {
     padding: 16px 0;
@@ -178,11 +224,11 @@ input {
     position: relative;
 }
 
-.header-link:hover{
+.header-link:hover {
     color: var(--gray-50);
 }
 
-.header-link::before{
+.header-link::before {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -190,11 +236,13 @@ input {
     width: 0;
     height: 2px;
     background-color: var(--blask-color);
-    transition: width 0.4s ease; /* Smooth animation */
+    transition: width 0.4s ease;
+    /* Smooth animation */
 }
 
 .header-link:hover::before {
-    width: 100%; /* Expands the line on hover */
+    width: 100%;
+    /* Expands the line on hover */
 }
 
 .header-buttons {
@@ -368,7 +416,7 @@ input {
 
 /* EXPLANTION - START */
 
-.explanation{
+.explanation {
     padding: 20px 0;
 }
 
@@ -382,8 +430,8 @@ input {
 
 
 
-@media screen and (max-width: 1400px){
-    .explanation-row{
+@media screen and (max-width: 1400px) {
+    .explanation-row {
         overflow-x: scroll;
     }
 }
@@ -554,10 +602,10 @@ input {
     }
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 465px) {
     /* BANNER - START */
 
-    .banner-title{
+    .banner-title {
         font-size: 24px;
     }
 
