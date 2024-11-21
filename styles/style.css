@@ -26,6 +26,7 @@ body .wraaper {
     --white-color: #fff;
     --gray-900: #d9d9d9;
     --gray-850: #bbb;
+    --gray-700: #eee;
     --gray-1000: #dfa347;
 }
 
@@ -477,6 +478,95 @@ input {
 
 /* STYLE - END */
 
+/* COMMENTS - START */
+
+.comment {
+    padding: 40px 0;
+}
+
+.comment-row {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    /* animation: marquee 25s linear infinite; */
+
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-66.6%); }
+}
+
+.comment-card {
+    border-radius: 16px;
+    width: 335px;
+    height: 404px;
+    background-color: var(--gray-700);
+    padding: 20px 0px 20px 20px;
+    animation: marquee 1s linear infinite;
+    overflow: hidden;
+}
+
+.comment-stars {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    margin-bottom: 25px;
+}
+
+.comment-card__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.comment-card__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    max-width: 250px;
+}
+
+.comment-card__profiles {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.comment-card__profiles-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+}
+
+.comment-card__profiles-subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #757575;
+}
+
+/* COMMENTS - END */
+
+
+  
+
+
+
+
+
 
 
 
@@ -602,10 +692,10 @@ input {
 
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
     /* STYLE - START */
 
-    .style-row{
+    .style-row {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
