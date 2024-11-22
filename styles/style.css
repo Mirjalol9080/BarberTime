@@ -496,7 +496,8 @@ input {
 
 @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-66.6%); }
+    100% { transform: translateX(100%); }
+    90% { transform: translateX(-0%); }
 }
 
 .comment-card {
@@ -505,7 +506,7 @@ input {
     height: 404px;
     background-color: var(--gray-700);
     padding: 20px 0px 20px 20px;
-    animation: marquee 1s linear infinite;
+    animation: marquee 3s linear infinite;
     overflow: hidden;
 }
 
