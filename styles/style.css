@@ -590,6 +590,17 @@ input {
     /* STYLE - END */
 }
 
+@media screen and (max-width: 1120px) {
+
+    /* BANNER - START */
+    .banner-title {
+        font-size: 50px;
+    }
+
+
+    /* BANNER - END */
+}
+
 @media screen and (max-width: 1030px) {
 
     /* STYLE - START */
@@ -603,17 +614,6 @@ input {
     }
 
     /* STYLE - NED */
-}
-
-@media screen and (max-width: 1120px) {
-
-    /* BANNER - START */
-    .banner-title {
-        font-size: 50px;
-    }
-
-
-    /* BANNER - END */
 }
 
 @media screen and (max-width: 975px) {
