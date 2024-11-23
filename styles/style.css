@@ -574,9 +574,31 @@ input {
 
 
 @media screen and (max-width: 1400px) {
+    /* EXPLANATION - START */
+
     .explanation-row {
         overflow-x: scroll;
     }
+
+    /* EXPLANATION - END */
+
+    /* COMMENT - START */
+
+    .comment-row{
+        overflow-x: scroll;
+        
+    }
+
+    .comment-card{
+        flex-shrink: 0;
+    }
+
+    @keyframes marquee {
+        
+    }
+
+    /* COMMENT - END */
+
 }
 
 @media screen and (max-width: 1214px) {
