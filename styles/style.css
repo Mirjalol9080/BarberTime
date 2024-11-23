@@ -634,6 +634,16 @@ input {
     cursor: pointer;
 }
 
+.contact-img{
+    width: 523px;
+    height: 407px;
+}
+
+.contact-img img{
+    width: 100%;
+    height: 100%;
+}
+
 /* CONTACT - END */
 
 
@@ -895,12 +905,6 @@ input {
 }
 
 @media screen and (max-width: 625px) {
-    .banner-title {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 625px) {
 
     .banner {
         padding-top: 20px;
@@ -914,6 +918,7 @@ input {
     .container {
         padding: 0 10px;
     }
+
 }
 
 @media screen and (max-width: 465px) {
