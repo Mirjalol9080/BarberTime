@@ -525,6 +525,7 @@ input {
     align-items: center;
     column-gap: 13px;
     margin-bottom: 25px;
+    flex-shrink: 0;
 }
 
 .comment-card__title {
@@ -534,6 +535,7 @@ input {
     line-height: 120%;
     color: var(--blask-color);
     margin-bottom: 12px;
+    flex-shrink: 0;
 }
 
 .comment-card__subtitle {
@@ -543,6 +545,7 @@ input {
     line-height: 150%;
     color: var(--blask-color);
     max-width: 250px;
+    flex-shrink: 0;
 }
 
 .comment-card__profiles {
