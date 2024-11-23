@@ -558,6 +558,7 @@ input {
     font-size: 16px;
     line-height: 150%;
     color: var(--blask-color);
+    flex-shrink: 0;
 }
 
 .comment-card__profiles-subtitle {
@@ -566,6 +567,7 @@ input {
     font-size: 16px;
     line-height: 150%;
     color: var(--gray-650);
+    flex-shrink: 0;
 }
 
 /* COMMENTS - END */
