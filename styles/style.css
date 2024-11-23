@@ -669,7 +669,7 @@ input {
 .footer-card {
     display: flex;
     flex-direction: column;
-    row-gap: 18px;
+    row-gap: 15px;
 }
 
 .footer-button {
