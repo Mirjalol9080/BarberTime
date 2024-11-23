@@ -906,6 +906,8 @@ input {
 
 @media screen and (max-width: 625px) {
 
+    /* BANNER - START */
+
     .banner {
         padding-top: 20px;
     }
@@ -918,6 +920,40 @@ input {
     .container {
         padding: 0 10px;
     }
+
+    /* BANNER - END */
+
+    /* CONATC - START */
+
+    .contact-img {
+        width: 413px;
+        height: 307px;
+    }
+
+    .contact-title{
+        font-size: 25px;
+    }
+
+    .contact-subtitle{
+        font-size: 20px;
+    }
+
+    .contact-send{
+        row-gap: 10px;
+    }
+
+    .contact-input{
+        width: 357px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .contact-button{
+        width: 200px;
+        height: 50px;
+    }
+
+    /* CONATC - END */
 
 }
 
