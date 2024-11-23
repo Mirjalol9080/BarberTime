@@ -607,7 +607,7 @@ input {
     margin: 20px 0;
 }
 
-.contact-send{
+.contact-send {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -640,25 +640,83 @@ input {
     cursor: pointer;
 }
 
-.contact-img{
+.contact-img {
     width: 523px;
     height: 407px;
 }
 
-.contact-img img{
+.contact-img img {
     width: 100%;
     height: 100%;
 }
 
 /* CONTACT - END */
 
+/* FOOTER - START */
 
+.footer {
+    background-color: var(--gray-900);
+    padding: 40px 0;
+}
 
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
 
+.footer-button {
+    padding: 15px 20px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    border: 1px solid var(--gray-850);
+    border-radius: 30px;
+    width: 218px;
+    cursor: pointer;
+}
 
+.footer-btn__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #000;
+}
 
+.footer-btn__icon {
+    width: 20px;
+    height: 20px;
+}
 
+.footer-btn__icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-card__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+.footer-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+/* FOOTER - START */
 
 
 
@@ -712,11 +770,11 @@ input {
 
     /* CONTACT - START */
 
-    .contact-title{
+    .contact-title {
         font-size: 30px;
     }
 
-    .contact-subtitle{
+    .contact-subtitle {
         font-size: 22px;
     }
 
@@ -739,7 +797,7 @@ input {
 
     /* CONTACT - START */
 
-    .contact-row{
+    .contact-row {
         flex-direction: column-reverse;
         justify-content: center;
         row-gap: 30px;
@@ -936,25 +994,25 @@ input {
         height: 307px;
     }
 
-    .contact-title{
+    .contact-title {
         font-size: 25px;
     }
 
-    .contact-subtitle{
+    .contact-subtitle {
         font-size: 20px;
     }
 
-    .contact-send{
+    .contact-send {
         row-gap: 10px;
     }
 
-    .contact-input{
+    .contact-input {
         width: 327px;
         height: 40px;
         font-size: 17px;
     }
 
-    .contact-button{
+    .contact-button {
         width: 200px;
         height: 40px;
     }
