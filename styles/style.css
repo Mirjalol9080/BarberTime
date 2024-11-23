@@ -517,6 +517,7 @@ input {
     padding: 20px 0px 20px 20px;
     animation: marquee 3s linear infinite;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .comment-stars {
