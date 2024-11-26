@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -12,7 +12,55 @@
          <section class="login">
             <div class="container">
                 <div class="login-row">
-                    
+                    <div class="login-card">
+                        <h1 class="login__title">Kirish</h1>
+                        <lable class="login-input">
+                            <p id="email" class="login-title">Email</p>
+                        </lable>
+                        <label class="login-inputs">
+                            <div class="email-icons">
+                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.833333 0H15.8333C16.2936 0 16.6667 0.3731 16.6667 0.833333V14.1667C16.6667 14.6269 16.2936 15 15.8333 15H0.833333C0.3731 15 0 14.6269 0 14.1667V0.833333C0 0.3731 0.3731 0 0.833333 0ZM15 3.5316L8.39317 9.44833L1.66667 3.51328V13.3333H15V3.5316ZM2.09288 1.66667L8.38492 7.21833L14.5842 1.66667H2.09288Z" fill="#6C63FF" />
+                                </svg>
+                            </div>
+                            <input type="email" class="login-input" placeholder="example@domain.com">
+                        </label>
+                        <lable class="login-input">
+                            <div class="login-title__main">
+                                <p class="login-title">Password</p>
+                                <a href="#" class="forpass-title">Parolni unutdingizmi?</a>
+                            </div>
+                            <label class="login-inputs">
+                                <div class="email-icons">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.8333 8.33333H16.6667C17.1269 8.33333 17.5 8.70641 17.5 9.16666V17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333H3.33333C2.8731 18.3333 2.5 17.9602 2.5 17.5V9.16666C2.5 8.70641 2.8731 8.33333 3.33333 8.33333H4.16667V7.5C4.16667 4.27834 6.77834 1.66666 10 1.66666C13.2217 1.66666 15.8333 4.27834 15.8333 7.5V8.33333ZM4.16667 10V16.6667H15.8333V10H4.16667ZM9.16667 11.6667H10.8333V15H9.16667V11.6667ZM14.1667 8.33333V7.5C14.1667 5.19881 12.3012 3.33333 10 3.33333C7.69882 3.33333 5.83333 5.19881 5.83333 7.5V8.33333H14.1667Z" fill="#6C63FF" />
+                                    </svg>
+                                </div>
+                                <input type="password" class="login-input">
+                            </label>
+                        </lable>
+                        <a href="./login.html" class="login-submit__button">Tizimga kirish</a>
+                        <p class="login-addlogin__href">Hisobingiz yo‘qmi? <a href="#" class="forpass-title">Ro‘yxatdan o‘ting</a></p>
+                        <div class="login-lines">
+                            <div class="login-line"></div>
+                            <p class="login-line__title">or</p>
+                            <div class="login-line"></div>   
+                        </div>
+                        <div class="login-href__card">
+                            <a href="#" class="login-other__button">
+                                <div class="login-icon">
+                                    <img src="./img/icons/Google-icon.png" alt="Google-icon">
+                                </div>
+                                <p class="login-href__icon">Google bilan davom eting</p>
+                            </a>
+                            <a href="#" class="login-other__button">
+                                <div class="login-icon">
+                                    <img src="./img/icons/Fecbook-icon.png" alt="Google-icon">
+                                </div>
+                                <p class="login-href__icon">Google bilan davom eting</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
          </section>
