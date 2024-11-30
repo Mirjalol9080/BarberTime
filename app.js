@@ -13,3 +13,18 @@ marquee.addEventListener("mouseout", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const music = document.getElementById("background-music");
+
+  // Musiqani avtomatik ijro qilishga urinish
+  const playMusic = async () => {
+    try {
+      await music.play();
+      console.log("Musiqa avtomatik ijro qilindi!");
+    } catch (error) {
+      console.warn("Avtomatik ijro bloklandi. Foydalanuvchi harakati talab qilinadi.");
+    }
+  };
+
+  playMusic();
+});

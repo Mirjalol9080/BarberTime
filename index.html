@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <audio id="background-music" autoplay loop style="display: none;">
         <source src="./img/Audio.mp3" type="audio/mpeg">
+        <source src="./img/Audio.ogg" type="audio/ogg">
         Brauzeringiz audio fayllarni qo‘llab-quvvatlamaydi.
     </audio>
 </head>
@@ -666,23 +667,6 @@
                             <img src="./img/icons/Group-icon.svg" alt="">
                             <a href="#" class="footer-other__link">Instagram</a>
                         </div>
-                        <button id="play-music">Musiqani eshiting</button>
-<audio id="background-music" loop style="display: none;">
-  <source src="assets/sizning-musqingiz.mp3" type="audio/mpeg">
-  <source src="assets/sizning-musqingiz.ogg" type="audio/ogg">
-  Brauzeringiz audio fayllarni qo‘llab-quvvatlamaydi.
-</audio>
-
-<script>
-  const music = document.getElementById("background-music");
-  const playButton = document.getElementById("play-music");
-
-  playButton.addEventListener("click", () => {
-    music.play();
-    playButton.style.display = "none"; // Tugmani yashirish
-  });
-</script>
-
                     </div>
                 </div>
             </div>
