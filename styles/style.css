@@ -239,7 +239,7 @@ input {
 .header-link::before {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -25px;
     left: 0;
     width: 0;
     height: 2px;
@@ -835,7 +835,7 @@ input {
     margin: 0 auto;
     border-radius: 12px;
     background: var(--gray-600);
-    padding: 13px 177px;
+    padding: 13px 195px;
 
     font-family: var(--font-family);
     font-weight: 500;
@@ -1158,6 +1158,27 @@ input {
     }
 
     /* BANNER - END */
+}
+
+@media screen and (max-width: 515px) {
+
+
+    .login-input{
+        width: 100%;
+    }
+
+    .login-submit__button{
+        width: 100%;
+        padding: 13px 0;
+    }
+
+    .login-line{
+        width: 100%;
+    }
+
+    .login-other__button{
+        column-gap: 40px;
+    }
 }
 
 @media screen and (max-width: 625px) {
