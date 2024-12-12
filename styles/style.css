@@ -52,7 +52,7 @@ input {
     border: none;
 }
 
-.audio-btn{
+.audio-btn {
     position: fixed;
     bottom: 50px;
     right: 30px;
@@ -311,6 +311,10 @@ input {
     row-gap: 40px;
 }
 
+.banner-row.help{
+    row-gap: 0px;
+}
+
 .banner-title {
     font-family: var(--third-family);
     font-weight: 500;
@@ -319,6 +323,13 @@ input {
     color: var(--blask-color);
     text-align: center;
     margin: 50px;
+}
+
+.banner-subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gray-650);
 }
 
 .banner-card {
@@ -771,7 +782,7 @@ input {
 
 /* LOGIN - START */
 
-.login{
+.login {
     margin-top: 120px;
 }
 
@@ -1163,20 +1174,20 @@ input {
 @media screen and (max-width: 515px) {
 
 
-    .login-input{
+    .login-input {
         width: 100%;
     }
 
-    .login-submit__button{
+    .login-submit__button {
         width: 100%;
         padding: 13px 0;
     }
 
-    .login-line{
+    .login-line {
         width: 100%;
     }
 
-    .login-other__button{
+    .login-other__button {
         column-gap: 40px;
     }
 }
