@@ -1,3 +1,13 @@
+let questionsItem = document.querySelector('.questions-item');
+let questionsSection = document.querySelector('.questions-section');
+
+questionsSection.addEventListener('click', function(){
+  questionsItem.classList.toggle('open')
+})
+
+
+
+
 // Marquee elementini tanlaymiz
 const marquee = document.querySelector(".marque");
 
