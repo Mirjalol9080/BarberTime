@@ -856,6 +856,8 @@ input {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--gray-650);
+    padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .questions-section_o {
