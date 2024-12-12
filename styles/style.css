@@ -476,7 +476,7 @@ input {
     color: #fff;
     background-color: var(--gray-1000);
     position: absolute;
-    bottom: 10em;
+    bottom: 6em;
     border: 2px solid transparent;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -982,7 +982,7 @@ input {
     }
 
     .style-submit__btn {
-        bottom: 6em;
+        bottom: 2em;
     }
 
     /* STYLE - NED */
