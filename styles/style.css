@@ -880,14 +880,15 @@ input {
 .questions-item{
     visibility: hidden;
     opacity: 0;
-    height: 0;
-    
+    height: 0;   
+    transition: all 0.2s ease-in-out;
+
 }
 
 .questions-item.open{
     visibility: visible;
     opacity: 1;
-    height: auto;
+    height: 240px;
     transition: all 0.2s ease-in-out;
 }
 

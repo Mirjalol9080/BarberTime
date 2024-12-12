@@ -1,9 +1,39 @@
-let questionsItem = document.querySelector('.questions-item');
-let questionsSection = document.querySelector('.questions-section');
 
-questionsSection.addEventListener('click', function(){
-  questionsItem.classList.toggle('open')
-})
+// let questionsItem = document.querySelectorAll('.questions-item');
+// let questionsSection = document.querySelectorAll('.questions-section');
+
+// for (let i = 0; i < questionsSection.length; i++) {
+//   questionsSection[i].addEventListener('click', function () {
+//     for (let j = 0; j < questionsItem.length; j++) {
+//       // Hamma elementlarni yopamiz
+//       questionsItem[j].classList.remove('open');
+//     }
+//     // Faqat joriy tanlangan elementni ochamiz
+//     questionsItem[i].classList.add('open');
+//   });
+// }
+
+
+
+let questionsItem = document.querySelectorAll('.questions-item');
+let questionsSection = document.querySelectorAll('.questions-section');
+
+for (let i = 0; i < questionsSection.length; i++){
+  questionsSection[i].addEventListener('click',function(){
+
+    let currentItem = questionsItem[i];
+
+    if(currentItem.classList.contains('open')){
+      currentItem.classList.remove('open')
+    }else{
+      for (let j = 0; j < questionsItem.length; j++){
+        questionsItem[j].classList.remove('open')
+      }
+      questionsItem[i].classList.add('open')
+    }
+
+  })
+}
 
 
 
