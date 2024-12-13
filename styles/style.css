@@ -1064,6 +1064,35 @@ input {
     width: 24px;
     height: 24px;
     cursor: pointer;
+} 
+
+.list{
+    display: none;
+    height: 352px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding-right: 10px;
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    padding-top: 10px;
+}
+
+.list p{
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--blask-color);
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: auto;
+    padding: 8px 8px;
+    border-radius: 18px;
+    background-color: var(--gar-550);
+    margin-bottom: 5px;
 }
 
 /* CHAT - END */

@@ -48,6 +48,59 @@ chatNav.addEventListener('click', function(){
 })
 
 
+
+
+
+
+
+
+let input = document.querySelector('.chat-input');
+let button = document.querySelector('.chat-input_sbt');
+let list = document.querySelector('.list');
+let resetTask = document.querySelector('.chat-restart__icon');
+let todos = [];
+function generateID() {}
+
+button.addEventListener('click', function() {
+  if (input.value.trim() === '') return; 
+  let obj = {
+      id: generateID(),
+      title: input.value,
+      isDone: false
+  };
+  todos.push(obj);
+  generateTodo();
+  input.value = '';
+  console.log(todos);
+});
+function deleteTodo(id) {
+  todos = todos.filter(item => item.id !== id);
+  generateTodo();
+}
+function generateTodo() {
+  list.innerHTML = ''; 
+  for (let todo of todos) {
+      let p = document.createElement('p');
+      p.innerText = todo.title;
+      list.appendChild(p);
+      
+  }
+}
+resetTask.addEventListener('click', function() {
+  todos = []; 
+  generateTodo();
+});
+
+
+
+
+
+
+
+
+
+
+
 // Marquee elementini tanlaymiz
 const marquee = document.querySelector(".marque");
 
