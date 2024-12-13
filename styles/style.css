@@ -914,7 +914,7 @@ input {
 
 /* CHAT - START */
 
-.chat{
+.chat {
     top: 0;
     left: 0;
     position: absolute;
@@ -950,14 +950,49 @@ input {
     cursor: pointer;
 }
 
-.chat.active{
+.chat.active {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.chat.active .chat-panel{
+.chat.active .chat-panel {
     display: block;
+}
+
+.chat-panel__top {
+    padding: 16px 16px;
+    border-bottom: 2px solid var(--gray-850);
+}
+
+.chat-panel-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-logos {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.chat-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.chat-restart__icon{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.chat-logo__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--blask-color);
 }
 
 /* CHAT - END */
