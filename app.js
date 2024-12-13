@@ -40,7 +40,12 @@ for (let i = 0; i < questionsSection.length; i++) {
   });
 }
 
+let chat = document.querySelector('.chat');
+let chatNav = document.querySelector('.chat-nav'); 
 
+chatNav.addEventListener('click', function(){
+  chat.classList.toggle('active')
+})
 
 
 // Marquee elementini tanlaymiz
