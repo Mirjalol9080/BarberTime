@@ -53,6 +53,7 @@ button {
 input {
     outline: none;
     border: none;
+    background-color: transparent;
 }
 
 .audio-btn {
@@ -240,13 +241,18 @@ input {
     color: var(--gray-50);
 }
 
+.bottom-color{
+    border-bottom: 2px solid var(--gray-50);
+}
+
+
 .header-link::before {
     content: '';
     position: absolute;
-    bottom: -25px;
+    bottom: -26px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--blask-color);
     transition: width 0.4s ease;
     /* Smooth animation */
@@ -933,6 +939,7 @@ input {
 }
 
 .chat-panel {
+    position: relative;
     display: none;
     border-radius: 16px;
     width: 325px;
@@ -996,6 +1003,12 @@ input {
     color: var(--blask-color);
 }
 
+.chat-in_row{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
 .chat-panel_content {
     display: flex;
     align-items: center;
@@ -1027,6 +1040,29 @@ input {
     width: 88px;
     height: 24px;
     background: var(--gray-500);
+    cursor: pointer;
+}
+
+.chat-inputs {
+    width: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    border: 1px solid var(--gray-500);
+    border-radius: 23px;
+    background-color: var(--gray-500);
+}
+
+.chat-input{
+    height: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.chat-input_sbt{
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
