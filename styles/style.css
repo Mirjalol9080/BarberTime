@@ -829,6 +829,10 @@ input {
 
 /* QUESTIONS - START */
 
+.questions-row{
+    margin-bottom: 24px;
+}
+
 .questions-title {
     font-family: var(--font-family);
     font-weight: 700;
