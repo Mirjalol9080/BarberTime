@@ -17,22 +17,27 @@
 
 let questionsItem = document.querySelectorAll('.questions-item');
 let questionsSection = document.querySelectorAll('.questions-section');
+let questionsSectionIcon = document.querySelectorAll('.questions-section_l__icon');
 
-for (let i = 0; i < questionsSection.length; i++){
-  questionsSection[i].addEventListener('click',function(){
-
+for (let i = 0; i < questionsSection.length; i++) {
+  questionsSection[i].addEventListener('click', function () {
     let currentItem = questionsItem[i];
+    let currentIcon = questionsSectionIcon[i]; // Har bir iconni o'zi bilan ishlash
 
-    if(currentItem.classList.contains('open')){
-      currentItem.classList.remove('open')
-    }else{
-      for (let j = 0; j < questionsItem.length; j++){
-        questionsItem[j].classList.remove('open')
+    if (currentItem.classList.contains('open')) {
+      currentItem.classList.remove('open');
+      currentIcon.textContent = "+"; // O'z iconni o'zgartirish
+    } else {
+      // Barcha savollarni yopish
+      for (let j = 0; j < questionsItem.length; j++) {
+        questionsItem[j].classList.remove('open');
+        questionsSectionIcon[j].textContent = "+"; // Barcha iconlarni yangilash
       }
-      questionsItem[i].classList.add('open')
+      // Tanlangan savolni ochish
+      currentItem.classList.add('open');
+      currentIcon.textContent = "-"; // O'z iconni o'zgartirish
     }
-
-  })
+  });
 }
 
 
